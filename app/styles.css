@@ -1,79 +1,85 @@
-.main {
-    padding: 50px;
-    text-align: center;
-  }
-  
-  .header {
-    background-color: #0d6efd;
-    color: white;
-    padding: 20px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .card {
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-decoration: none;
-    color: inherit;
-    background: white;
-  }
-  
-  .card:hover,
-  .card:focus,
-  .card:active {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  .card-content {
-    padding: 16px;
-  }
-  
-  .image-container {
-    width: 100%; /* Adjust image container width */
-    height: auto; /* Adjust image container height */
-    overflow: hidden;
-    border-radius: 8px; /* Optional: if you want rounded corners */
-  }
-  
-  .card h2 {
-    margin: 0 0 8px 0;
-    font-size: 1.5rem;
-    color: #333;
-  }
-  
-  .card p {
-    margin: 0;
-    color: #666;
-    font-size: 1.2rem;
-  }
-  
-  /* Add responsive design for the images */
-  .image-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
+.wrapper {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: #f5f5f5;
+  color: #333;
+}
 
-  .title {
-    color: #0d6efd; /* Or any other color you prefer for links */
-    cursor: pointer;
-  }
-  
-  .title:hover,
-  .title:focus {
-    text-decoration: underline; /* Optional: adds underline on hover for visual cue */
-  }
-  
-  
+.header {
+  background: #e1e1e1;
+  padding: 10px 20px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  margin-left: 15px;
+}
+
+.content {
+  padding: 20px 0;
+}
+
+.search-area {
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2em;
+}
+
+.card p {
+  color: #666;
+}
+
+.footer {
+  background: #e1e1e1;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}

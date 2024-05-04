@@ -142,7 +142,7 @@ def scrape_merchant():
 
         merchant_items.append({
             'name': name,
-            'price': price,
+            'price': "$" + price,
             'image_url': img,
             'seller': seller,
             'link': link
@@ -150,8 +150,8 @@ def scrape_merchant():
     
 
     # Filter items by price
-    filtered_items = [item for item in merchant_items if float(item['price']) <= maxPrice]
-    price_sorted = sorted(filtered_items, key=lambda x: float(x['price']))
+    filtered_items = [item for item in merchant_items if float(item['price'].replace('$', '')) <= maxPrice]
+    price_sorted = sorted(filtered_items, key=lambda x: float(x['price'].replace('$', ''))) 
     print(filtered_items[0])
     print(price_sorted[0])
     
