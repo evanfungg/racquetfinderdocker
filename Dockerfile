@@ -4,8 +4,6 @@ FROM node:18-alpine
 # Set the working directory inside the container
 WORKDIR /app
 
-ENV REFRESH=20230504
-
 # Copy the package.json and package-lock.json files
 COPY package*.json ./
 

@@ -25,6 +25,9 @@ export default function Home() {
         <div className="header-inner">
           <h1>Racquet Finder</h1>
           <div className="nav">
+          <div className="image-container">
+            <img src="/racquetfinder.png" alt="Racquet Image" />
+          </div>
           </div>
         </div>
       </header>
