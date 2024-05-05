@@ -25,9 +25,6 @@ export default function Home() {
         <div className="header-inner">
           <h1>Racquet Finder</h1>
           <div className="nav">
-            <a href="#" className="nav-link">Link 1</a>
-            <a href="#" className="nav-link">Link 2</a>
-            <a href="#" className="nav-link">Link 3</a>
           </div>
         </div>
       </header>
@@ -42,7 +39,7 @@ export default function Home() {
         <div className="cards-container">
           {racquets.map((racquet, index) => (
             <div key={index} className="card">
-              <a href={racquet.link} target="_blank" rel="noopener noreferrer">
+              <a className = "racquet-link" href={racquet.link} target="_blank" rel="noopener noreferrer">
                 <Image src={racquet.image_url} alt={racquet.name} width={200} height={200} />
                 <div className="card-body">
                   <h2>{racquet.name}</h2>
@@ -54,9 +51,7 @@ export default function Home() {
         </div>
       </div>
 
-      <footer className="footer">
-        <p>Footer content here</p>
-      </footer>
+     
     </div>
   );
 }
